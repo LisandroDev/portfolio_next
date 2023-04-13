@@ -1,0 +1,27 @@
+.imageBackground {
+    background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80');
+    background-color: #cccccc;
+    background-size:cover;
+    -webkit-animation: slidein 100s;
+    animation: slidein 100s;
+
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;   
+}
+
+@-webkit-keyframes slidein {
+    from {background-position: top; background-size:1471px; }
+    to {background-position: -100px 0px;background-size:1500px;}
+    }
+    
+    @keyframes slidein {
+    from {background-position: top;background-size:1471px; }
+    to {background-position: -100px 0px;background-size:1500px;}
+    
+    }

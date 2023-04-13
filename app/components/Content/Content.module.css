@@ -1,0 +1,6 @@
+.gradient {
+  background: #0f2027; /* fallback for old browsers */
+  background-image: linear-gradient(to top, #202020 0%, black 100%);
+
+}
+

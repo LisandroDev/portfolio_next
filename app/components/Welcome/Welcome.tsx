@@ -5,7 +5,7 @@ export const Welcome = () => {
   return (
     <div
       className={
-        "mx-auto flex flex-col tracking-wide text-slate-50 justify-center align-center gap-y-4 h-screen " +
+        "mx-auto flex flex-col tracking-wide text-slate-50 justify-center align-center gap-y-4 h-screen w-screen " +
         styles.imageBackground
       }
     >

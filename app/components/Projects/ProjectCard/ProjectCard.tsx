@@ -1,23 +1,46 @@
-import Image from "next/image";
-import jsLogo from "../../../assets/Javascript.svg";
+import Image, { StaticImageData } from "next/image";
+import { FiGithub, FiLink } from "react-icons/fi";
+import styles from "./ProjectCard.module.css";
 
-export const ProjectCard = () => {
+type ProjectCardProps = {
+  stack: Array<string>;
+  description: string;
+  title: string;
+  image: StaticImageData;
+  code: string;
+  liveDemo: string;
+}
+
+export const ProjectCard = ({stack,image,description,title,code,liveDemo}: ProjectCardProps) => {
   return (
-    <div className="flex flex-row gap-x-4 shadow-[2px_2px_0px_0px_rgba(109,40,217)]">
-      <Image src={jsLogo} height="120" width="120" alt="jslogo" />
-      <div className="max-w-sm">
+    <div
+      className={`flex text-black flex-col items-center ${styles.shadowBox} md:flex-row max-w-4xl h-auto p-6 gap-x-4 p-2 rounded-2xl bg-[#fff] `}
+    >
+      <div className={`self-center min-w-xl ${styles.shadowBox} rounded-3xl`}>
+        <Image src={image} className="rounded-3xl h-full" alt="jslogo" />
+      </div>
+
+      <div className="mt-6 max-w-sm flex flex-col gap-8">
         {" "}
-        <h1 className="text-3xl">Neithaclothes</h1>{" "}
-        <p className="text-sm">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-          vulputate semper justo, et viverra neque lobortis semper. Quisque at
-          nulla augue. Cras eget massa sem. Donec sagittis nunc sit amet posuere
-          pretium. Nullam sagittis, mauris quis scelerisque feugiat, arcu quam
-          laoreet diam, quis porttitor lacus diam non ligula. Donec ut feugiat
-          ex. Ut ornare mattis lacinia. Etiam venenatis venenatis nulla in
-          porttitor. Pellentesque condimentum molestie elit, eu malesuada leo
-          pulvinar nec.
+        <h1 className="text-2xl text-center ">{title}</h1>{" "}
+        <p className="text-md text-center text-[#767676] ">
+          {description}
         </p>
+        <div className="self-center flex-wrap flex flex-row gap-4 ">
+          {stack.map(e => <p key={e} className={`${styles.stackBox} `}>{e}</p>)}
+        </div>
+        <div className="self-center flex flex-row gap-4">
+          <a target="_blank" href={code}>
+            <p className="flex gap-1 transition-all hover:text-blue-600">
+              Code <FiGithub size={'20px'} />
+            </p>{" "}
+          </a>
+          <a target="_blank" href={liveDemo}>
+            <p className="flex gap-1 transition-all hover:text-blue-600">
+              Live Demo <FiLink size={'20px'} />
+            </p>{" "}
+          </a>
+        </div>
       </div>
     </div>
   );

@@ -15,9 +15,9 @@ export const Stack = () => {
   return (
     <div className="flex flex-col transition-all self-center md:flex-row justify-center align-center gap-x-5 mt-12">
       <p className="text-normal md:text-xl font-bold text-center ">
-        Tech Stack <span className="ml-5 ">|</span>
+        Tech Stack <span className="hidden md:inline ml-5 ">|</span>
       </p>
-      <ul className="flex gap-x-4 flex-col md:flex-row">
+      <ul className="grid grid-cols-2 gap-4 md:flex md:gap-x-4 md:flex-row">
         <li>
             <Image
               src={jsLogo}

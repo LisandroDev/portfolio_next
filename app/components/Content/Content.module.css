@@ -1,6 +1,7 @@
 .gradient {
-  background: #0f2027; /* fallback for old browsers */
-  background-image: linear-gradient(to top, #202020 0%, black 100%);
+  background: #f9f9f9; /* fallback for old browsers */
+  background-image: linear-gradient(to top, rgba(32, 32, 32, 0) 0%, rgba(0, 0, 0, 0) 100%);
+  
 
 }
 

@@ -6,12 +6,12 @@ export const Content = () => {
     <div
       id="content"
       className={
-        "h-screen flex flex-col items-center gap-x-12 text-white " +
+        "h-auto flex flex-col items-center gap-x-12 text-white " +
         styles.gradient
       }
     >
       <div className="pt-6">
-        <h1 className="text-xl">Projects</h1>
+        <h1 className="text-3xl underline text-black m-2">Projects</h1>
         <Projects />
       </div>
     </div>

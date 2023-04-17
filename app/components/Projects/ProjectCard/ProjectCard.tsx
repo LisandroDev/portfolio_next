@@ -29,7 +29,7 @@ export const ProjectCard = ({stack,image,description,title,code,liveDemo}: Proje
         <div className="self-center flex-wrap flex flex-row gap-4 ">
           {stack.map(e => <p key={e} className={`${styles.stackBox} `}>{e}</p>)}
         </div>
-        <div className="self-center flex flex-row gap-4">
+        <div className="z-10 self-center flex flex-row gap-4">
           <a target="_blank" href={code}>
             <p className="flex gap-1 transition-all hover:text-blue-600">
               Code <FiGithub size={'20px'} />

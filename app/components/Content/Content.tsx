@@ -11,7 +11,7 @@ export const Content = () => {
       }
     >
       <div className="pt-6">
-        <h1 className="text-3xl underline text-black m-2">Projects</h1>
+        <h1 className="text-3xl underline ml-2 text-center text-black">Projects</h1>
         <Projects />
       </div>
     </div>

@@ -3,7 +3,7 @@ import { Stack } from "./Stack/Stack";
 
 export const Welcome = () => {
   return (
-    <div
+    <div id="welcome"
       className={
         "mx-auto flex flex-col tracking-wide text-slate-50 justify-center align-center gap-y-4 h-screen w-screen " +
         styles.imageBackground
@@ -15,7 +15,7 @@ export const Welcome = () => {
         </h1>
         <p className={"text-center text-xs mt-4 text-semibold md:text-xl"}>
           Hi!, I&apos;m Lisandro Rubianes. A Passionate Full-Stack Developer
-          based in Buenos Aires, Argentina.
+          based in Buenos Aires, Argentina 🇦🇷.
         </p>
       </div>
       <Stack />

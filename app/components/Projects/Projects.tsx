@@ -27,13 +27,13 @@ export const Projects = () => {
         title="Budget App"
         stack={["React", "PostgreSQL", "Express.JS","Bootstrap"]}
         description={budgetAppDescription}
-        code="https://github.com/LisandroDev/ecommerce"
-        liveDemo="https://neithaclothes-ecommerce.onrender.com/"
+        code="https://github.com/LisandroDev/budget_app"
+        liveDemo="https://budgetapp-5q0m.onrender.com/"
       />
             <ProjectCard
         image={whereisAppImg}
         title="Where is"
-        stack={["React", "MongoDB", "Express.JS","Vanilla CSS"]}
+        stack={["React", "MongoDB", "Express.JS","TailwindCSS"]}
         description={whereisAppDescription}
         code="https://github.com/LisandroDev/whereis"
         liveDemo="https://whereis.onrender.com"

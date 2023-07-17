@@ -26,9 +26,9 @@ export const Contact = () => {
         <h1 className="text-3xl"><p className="flex gap-4">Resumes <RiFilePaperLine /></p></h1>
         <ul className="flex flex-col gap-8">
         <li className={`p-2 rounded-3xl text-sm max-w-xs  transition-all ease-in-out duration-300 hover:text-blue-600 ${styles.shadowBox}`}>
-          <a target="_blank" href="https://docs.google.com/document/d/16g0gw2kKwHoQHMgVzNd2gwFZOaOXX7gt"><p className="flex items-center gap-4"><span className="text-xl">🇪🇸</span> Spanish Resume </p></a>
+          <a target="_blank" href="https://drive.google.com/file/d/1aAY7KRVpyX0bkd9qaqpypVEQyDra_0rx/view?usp=drive_link"><p className="flex items-center gap-4"><span className="text-xl">🇪🇸</span> Spanish Resume </p></a>
           </li> <li className={`p-2 rounded-3xl text-sm max-w-xs  transition-all ease-in-out duration-300 hover:text-blue-600 ${styles.shadowBox}`}>
-          <a target="_blank" href="https://docs.google.com/document/d/1E5n_kuxtpJuGKv0_1Wk4nunKBCYA81hC"><p className="flex items-center gap-4"><span className="text-xl">🇺🇸</span> English Resume</p></a>
+          <a target="_blank" href="https://drive.google.com/file/d/1r9Op3Ip65gMpS9Bk_High6j2O7tffgls/view?usp=drive_link"><p className="flex items-center gap-4"><span className="text-xl">🇺🇸</span> English Resume</p></a>
           </li>
         </ul>
       </div>

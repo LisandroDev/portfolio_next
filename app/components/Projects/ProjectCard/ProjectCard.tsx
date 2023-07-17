@@ -16,7 +16,7 @@ export const ProjectCard = ({stack,image,description,title,code,liveDemo}: Proje
     <div
       className={`flex text-black flex-col items-center ${styles.shadowBox} md:flex-row max-w-4xl h-auto p-6 gap-x-4 p-2 rounded-2xl bg-[#fff] `}
     >
-      <div className={`self-center min-w-xl ${styles.shadowBox} rounded-3xl`}>
+      <div className={`self-center max-w-md ${styles.shadowBox} rounded-3xl`}>
         <Image src={image} className="rounded-3xl h-full" alt="jslogo" />
       </div>
 

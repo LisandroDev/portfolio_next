@@ -8,7 +8,7 @@ type ProjectCardProps = {
   title: string;
   image: StaticImageData;
   code: string;
-  liveDemo: string;
+  liveDemo?: string;
 }
 
 export const ProjectCard = ({stack,image,description,title,code,liveDemo}: ProjectCardProps) => {
@@ -35,11 +35,12 @@ export const ProjectCard = ({stack,image,description,title,code,liveDemo}: Proje
               Code <FiGithub size={'20px'} />
             </p>{" "}
           </a>
-          <a target="_blank" href={liveDemo}>
+          {liveDemo && <a target="_blank" href={liveDemo}>
             <p className="flex gap-1 transition-all hover:text-blue-600">
               Live Demo <FiLink size={'20px'} />
             </p>{" "}
-          </a>
+          </a>}
+          
         </div>
       </div>
     </div>

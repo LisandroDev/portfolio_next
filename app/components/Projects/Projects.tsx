@@ -19,11 +19,11 @@ const whereisAppDescription = `"Where's Waldo" style game, players must find thr
 
 export const Projects = () => {
   return (
-    <div className="container-md m-5 gap-5 flex flex-col">
-        <ProjectCard
+    <div className="container-md m-5 gap-5 grid grid-cols-1 2xl:grid-cols-2">
+      <ProjectCard
         image={urlShortenerImg}
         title="URL Shortener"
-        stack={["React", "PostgreSQL", "Next.JS","TailwindCSS", "DaisyUI", "Prisma"]}
+        stack={["React", "PostgreSQL", "Next.JS", "TailwindCSS", "DaisyUI", "Prisma"]}
         description={URLShortenerDescription}
         code="https://github.com/LisandroDev/url_shortener"
         liveDemo="https://urlshort-psi.vercel.app/"
@@ -31,7 +31,7 @@ export const Projects = () => {
       <ProjectCard
         image={messengerLogin}
         title="Messenger App"
-        stack={["React", "PostgreSQL", "Next.JS","TailwindCSS", "Prisma", "Express", "Web Sockets"]}
+        stack={["React", "PostgreSQL", "Next.JS", "TailwindCSS", "Prisma", "Express", "Web Sockets"]}
         description={messengerAppDescription}
         code="https://github.com/LisandroDev/messenger"
         liveDemo="https://messengerapp-27vj.onrender.com/"
@@ -39,27 +39,30 @@ export const Projects = () => {
       <ProjectCard
         image={neithaImg}
         title="Neithaclothes"
-        stack={["React", "PostgreSQL", "Express.JS","TailwindCSS"]}
+        stack={["React", "PostgreSQL", "Express.JS", "TailwindCSS"]}
         description={neithaclothesDescription}
         code="https://github.com/LisandroDev/ecommerce"
         liveDemo="https://ecommerce-bzbh.vercel.app/"
       />
+
+
       <ProjectCard
         image={budgetAppImg}
         title="Budget App"
-        stack={["React", "PostgreSQL", "Express.JS","Bootstrap"]}
+        stack={["React", "PostgreSQL", "Express.JS", "Bootstrap"]}
         description={budgetAppDescription}
         code="https://github.com/LisandroDev/budget_app"
         liveDemo="https://budgetapp-5q0m.onrender.com/"
       />
-            <ProjectCard
+      <ProjectCard
         image={whereisAppImg}
         title="Where is"
-        stack={["React", "MongoDB", "Express.JS","TailwindCSS"]}
+        stack={["React", "MongoDB", "Express.JS", "TailwindCSS"]}
         description={whereisAppDescription}
         code="https://github.com/LisandroDev/whereis"
         liveDemo="https://whereis.onrender.com"
       />
+
     </div>
   );
 };

@@ -14,10 +14,10 @@ type ProjectCardProps = {
 export const ProjectCard = ({stack,image,description,title,code,liveDemo}: ProjectCardProps) => {
   return (
     <div
-      className={`flex text-black flex-col items-center ${styles.shadowBox} md:flex-row max-w-4xl h-auto p-6 gap-x-4 p-2 rounded-2xl bg-[#fff] `}
+      className={`flex text-black flex-col items-center ${styles.shadowBox} md:flex-row max-w-4xl h-auto p-2 gap-x-4 rounded-2xl bg-[#fff] `}
     >
-      <div className={`self-center max-w-md ${styles.shadowBox} rounded-3xl`}>
-        <Image src={image} className="rounded-3xl h-full" alt="jslogo" />
+      <div className={`self-center max-w-md ${styles.shadowBox} h-[300px] relative overflow-hidden rounded-3xl`}>
+        <Image src={image} className="rounded-3xl  object-fill" alt="jslogo" />
       </div>
 
       <div className="mt-6 max-w-sm flex flex-col gap-8">

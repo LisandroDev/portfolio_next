@@ -11,7 +11,7 @@ export const Content = () => {
       }
     >
       <div id="projects" className="pt-6">
-        <h1 className="text-3xl  ml-2 text-center text-black">Projects</h1>
+        <h1 className="text-3xl  ml-2 text-center  font-bold text-black">Projects</h1>
         <Projects />
       </div>
       <div id="contact" className="min-h-[50vh] w-full  mt-6">

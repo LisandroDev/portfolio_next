@@ -7,8 +7,8 @@ import styles from './Contact.module.css'
 export const Contact = () => {
   return (
     <div className="justify-evenly m-8 gap-5 flex flex-col md:flex-row flex-wrap text-black">
-      <div className="flex flex-col gap-y-8">
-        <h1 className="text-3xl"><p className="flex gap-4"> Socials <IoShareSocialSharp /></p></h1>
+      <div className="flex flex-col items-center md:items-start gap-y-8">
+        <h1 className="text-3xl font-bold"><p className="flex gap-4"> Socials <IoShareSocialSharp /></p></h1>
         <ul className="flex flex-col shrink gap-8">
           <li className={`p-2 text-sm max-w-xs rounded-3xl transition-all ease-in-out duration-300 hover:text-blue-600 ${styles.shadowBox}`}>
             <a target="_blank" href="https://github.com/LisandroDev"><p className="flex items-center gap-4"><BsGithub size={"40px"} /> LisandroDev</p></a>
@@ -22,8 +22,8 @@ export const Contact = () => {
           </li>
         </ul>
       </div>
-      <div className="flex flex-col gap-y-8">
-        <h1 className="text-3xl"><p className="flex gap-4">Resumes <RiFilePaperLine /></p></h1>
+      <div className="flex flex-col items-center mt-8 md:mt-0 md:items-start gap-y-8">
+        <h1 className="text-3xl font-bold"><p className="flex gap-4">Resumes <RiFilePaperLine /></p></h1>
         <ul className="flex flex-col gap-8">
         <li className={`p-2 rounded-3xl text-sm max-w-xs  transition-all ease-in-out duration-300 hover:text-blue-600 ${styles.shadowBox}`}>
           <a target="_blank" href="https://drive.google.com/file/d/1aAY7KRVpyX0bkd9qaqpypVEQyDra_0rx/view?usp=drive_link"><p className="flex items-center gap-4"><span className="text-xl">🇪🇸</span> Spanish Resume </p></a>

@@ -4,10 +4,9 @@ import budgetAppImg from "../../assets/projectsimages/budgetapp.png";
 import whereisAppImg from "../../assets/projectsimages/whereis.jpeg"
 import urlShortenerImg from '@/app/assets/UrlShortener.png'
 import messengerLogin from '@/app/assets/projectsimages/messenger_login.png'
+import linkshareImg from '@/app/assets/projectsimages/linksharefullscreen.png'
 
-const neithaclothesDescription = `Neithaclothes is an online platform for buying products. It provides
-a user-friendly interface for browsing, purchasing, and shipping
-items.`;
+const neithaclothesDescription = `Front-End for Ecommerce`;
 
 const messengerAppDescription = ` Connect effortlessly using our user-friendly messaging platform powered by websockets.`
 
@@ -16,6 +15,8 @@ const URLShortenerDescription = `Simplify and optimize your links with our power
 const budgetAppDescription = `Budget app was created as part for Alkemy Challenge,that required participants to build a budget app that could separate income and expenses, using a SQL database.`;
 
 const whereisAppDescription = `"Where's Waldo" style game, players must find three hidden characters: a turtle, a bee reading a book, and a flying squirrel, they can track their scores and compare them with others on the app's scoreboard`
+
+const linkviceDescription = `Landing page for a link-sharing app`
 
 export const Projects = () => {
   return (
@@ -28,18 +29,27 @@ export const Projects = () => {
         code="https://github.com/LisandroDev/url_shortener"
         liveDemo="https://urlshort-psi.vercel.app/"
       />
+
+      <ProjectCard
+        image={linkshareImg}
+        title="Linkvice"
+        stack={["React", "TailwindCSS", "Framer Motion"]}
+        description={linkviceDescription}
+        code="https://github.com/LisandroDev/linkshare"
+        liveDemo="https://linkshare-rho.vercel.app/"
+      />
+
       <ProjectCard
         image={messengerLogin}
         title="Messenger App"
         stack={["React", "PostgreSQL", "Next.JS", "TailwindCSS", "Prisma", "Express", "Web Sockets"]}
         description={messengerAppDescription}
         code="https://github.com/LisandroDev/messenger"
-        liveDemo="https://messengerapp-27vj.onrender.com/"
       />
       <ProjectCard
         image={neithaImg}
         title="Neithaclothes"
-        stack={["React", "PostgreSQL", "Express.JS", "TailwindCSS"]}
+        stack={["React", "PostgreSQL", "Express.JS", "TailwindCSS", "Landing page"]}
         description={neithaclothesDescription}
         code="https://github.com/LisandroDev/ecommerce"
         liveDemo="https://ecommerce-bzbh.vercel.app/"
@@ -62,6 +72,7 @@ export const Projects = () => {
         code="https://github.com/LisandroDev/whereis"
         liveDemo="https://whereis.onrender.com"
       />
+
 
     </div>
   );
